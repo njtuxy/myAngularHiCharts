@@ -14,10 +14,15 @@
 
 </head>
 <body>
-<h2>SWAT Installer Size</h2>
+
+<!--<mark> <h2>SWAT Installer Size</h2> </mark>-->
 
 
 <div ng-app="myapp" class="container">
+
+    <h3 class="events text-center" >SWAT Installer Sizes</h3>
+
+    <hr style="width: 100%; color: black; height: 10px; background-color:gainsboro;" />
 
     <div class="list-group" ng-controller="httpQueryAppControler1">
         <!--<ul>-->
@@ -31,7 +36,8 @@
         <!--<p> VERSIONS: {{hockey_versions}}</p>-->
     </div>
 
-    <div ng-controller="myctrl">
+
+    <div ng-controller="mySwatAndroidBuildChart">
         <div class="row">
             
             <!-- chart area -->
@@ -49,7 +55,31 @@
                 <!--&lt;!&ndash;version: {{db_items.versionnumber}}&ndash;&gt;-->
                 <!--&lt;!&ndash;date: {{db_items._created_on | date:'MM/dd/yyyy'}}&ndash;&gt;-->
                 <!--size: xxx,-->
-                size: {{hockey_vt_pairs}}
+            <!--</li>-->
+
+        </div>
+    </div>
+
+    <hr style="width: 100%; color: black; height: 10px; background-color:gainsboro;" />
+
+    <div ng-controller="mySwatIOSBuildChart">
+        <div class="row">
+
+            <!-- chart area -->
+            <div class="row">
+                <div class="row">
+                    <highchart id="chart2" config="chartConfig" class="span9" ></highchart>
+                </div>
+            </div>
+
+            <!--<button ng-click="addPoints()">Add New Points</button>-->
+            <!--<button ng-click="addSeries()">Add New Series</button>-->
+
+            <!--<li class="list-group-item" ng-repeat="db_items in hockey_build_sizes">-->
+            <!--&lt;!&ndash;size: {{db_items.appsizeondisc | bytes}}&ndash;&gt;-->
+            <!--&lt;!&ndash;version: {{db_items.versionnumber}}&ndash;&gt;-->
+            <!--&lt;!&ndash;date: {{db_items._created_on | date:'MM/dd/yyyy'}}&ndash;&gt;-->
+            <!--size: xxx,-->
             <!--</li>-->
 
         </div>

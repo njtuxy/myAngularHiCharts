@@ -22,7 +22,7 @@
 
     <h3 class="events text-center" >SWAT Installer Sizes</h3>
 
-    <hr style="width: 100%; color: black; height: 10px; background-color:gainsboro;" />
+    <!--<hr style="width: 100%; color: black; height: 10px; background-color:gainsboro;" />-->
 
     <div class="list-group" ng-controller="httpQueryAppControler1">
         <!--<ul>-->
@@ -37,34 +37,14 @@
     </div>
 
 
-    <div ng-controller="mySwatAndroidBuildChart">
-        <div class="row">
-            
-            <!-- chart area -->
-            <div class="row">
-                <div class="row">
-                    <highchart id="chart1" config="chartConfig" class="span9" ></highchart>
-                </div>
-            </div>
-
-            <!--<button ng-click="addPoints()">Add New Points</button>-->
-            <!--<button ng-click="addSeries()">Add New Series</button>-->
-
-            <!--<li class="list-group-item" ng-repeat="db_items in hockey_build_sizes">-->
-                <!--&lt;!&ndash;size: {{db_items.appsizeondisc | bytes}}&ndash;&gt;-->
-                <!--&lt;!&ndash;version: {{db_items.versionnumber}}&ndash;&gt;-->
-                <!--&lt;!&ndash;date: {{db_items._created_on | date:'MM/dd/yyyy'}}&ndash;&gt;-->
-                <!--size: xxx,-->
-            <!--</li>-->
-
-        </div>
-    </div>
-
-    <hr style="width: 100%; color: black; height: 10px; background-color:gainsboro;" />
-
     <div ng-controller="mySwatIOSBuildChart">
-        <div class="row">
 
+        <div>
+            <img src="./icons/ios.png" alt="Mountain View" style="width:50px;height:50px;">
+        </div>
+
+
+        <div class="row">
             <!-- chart area -->
             <div class="row">
                 <div class="row">
@@ -84,6 +64,37 @@
 
         </div>
     </div>
+
+    <div ng-controller="mySwatAndroidBuildChart">
+        <div>
+            <img src="./icons/android.png" alt="Mountain View" style="width:50px;height:50px;">
+        </div>
+
+        <div class="row">
+            <!-- chart area -->
+            <div class="row">
+                <div class="row">
+                    <highchart id="chart1" config="chartConfig" class="span9" ></highchart>
+                </div>
+            </div>
+
+            <!--<button ng-click="addPoints()">Add New Points</button>-->
+            <!--<button ng-click="addSeries()">Add New Series</button>-->
+
+            <!--<li class="list-group-item" ng-repeat="db_items in hockey_build_sizes">-->
+                <!--&lt;!&ndash;size: {{db_items.appsizeondisc | bytes}}&ndash;&gt;-->
+                <!--&lt;!&ndash;version: {{db_items.versionnumber}}&ndash;&gt;-->
+                <!--&lt;!&ndash;date: {{db_items._created_on | date:'MM/dd/yyyy'}}&ndash;&gt;-->
+                <!--size: xxx,-->
+            <!--</li>-->
+
+        </div>
+
+    </div>
+
+    <!--<hr style="width: 100%; color: black; height: 10px; background-color:gainsboro;" />-->
+
+
 </div>
 
 </body>

@@ -30,7 +30,7 @@
 <body>
 <div ng-app="myapp" class="container">
 
-    <h3 class="events text-center" >SWAT - Adhoc Builds Size Chart</h3>
+    <h3 class="events text-center" >SWAT - Adhoc Builds Size/Changes Chart</h3>
 
     <div class="list-group" ng-controller="httpQueryAppControler1">
     </div>
@@ -41,12 +41,11 @@
             <!-- chart area -->
             <div class="row">
                 <div class="row">
-                    <highchart id="chart2" config="chartConfig" class="span9" ></highchart>
+                    <highchart id="chart1" config="chartConfig" class="span9" ></highchart>
                 </div>
             </div>
         </div>
     </div>
-
 
     <div ng-controller="mySwatAndroidBuildChart">
         <div class="row">
